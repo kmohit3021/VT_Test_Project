@@ -19,14 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
+WebUI.setViewPortSize(1350, 700)
 
 WebUI.navigateToUrl('https://www.stage-aarpmedicareplans.uhc.com/')
 
 WebUI.setText(findTestObject('Object Repository/OR Harsh/Page_AARP Medicare Plans from UnitedHealthcare/input_Enter your ZIP code_zipcodemeded-0'), 
     '10001')
 
-WebUI.delay(40)
+WebUI.delay(30)
 
 WebUI.click(findTestObject('Object Repository/OR Harsh/Page_AARP Medicare Plans from UnitedHealthcare/span_Find plans'))
 
